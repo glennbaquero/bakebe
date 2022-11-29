@@ -79,7 +79,7 @@ class Branch extends Model
         $url .= "address={$string}";
         $url .= '&components=country:PH';
         $url .= '&sensor=true';
-        $url .= '&key=AIzaSyBdZmifNZogZcfRQ-wZy0B7yVVTd0cvPm4';
+        $url .= '&key=';
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
