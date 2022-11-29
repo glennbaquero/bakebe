@@ -1,0 +1,18 @@
+.hdr--holder {
+	height: 100px;
+	transition: all .3s ease;
+
+	.hdr--logo {
+		width: 45%;
+		height: 60px;
+		background-position: center;
+  		background-repeat: no-repeat;
+  		background-size: contain;
+	}
+
+	.nav-link {
+		padding: 0;
+		font-family: $secondary-font;
+		font-size: 13.33px;
+	}
+}

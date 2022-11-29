@@ -1,0 +1,474 @@
+.desktop-inline-show {
+	display: inline-block;
+}
+
+.desktop-show {
+	display: block;
+}
+
+.mobile-show {
+	display: none;
+}
+
+
+@media (min-width: 576px) {
+	.modal-dialog {
+	    max-width: 800px;
+	    margin: 1.75rem auto;
+	}
+}
+
+
+
+@media screen and (max-width: 1024px) {
+	
+	// General
+
+	body {
+		overflow-x: hidden;
+	}
+
+	.desktop-inline-show {
+		display: none;
+	}
+
+	.desktop-show {
+		display: none;
+	}
+
+	.mobile-show {
+		display: block;
+	}
+
+	.main {
+		height: auto;
+	}
+
+	.hdr--margin {
+		margin-top: 80px;
+	}
+
+	// Header
+
+	.mbl--hdr {
+		height: 80px;
+	}
+
+	.mbl--logo {
+		width: 80%;
+		height: 50px;
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.mbl--HamMenu {
+		width: 30px;
+		margin-right: 0;
+		margin-left: auto;
+		position: relative;
+
+		.mbl--hmenu {
+			width: 100%;
+			height: 3px;
+			margin-bottom: 6px;
+			border-radius: 1px;
+			background-color: $color--black;
+
+			&:first-child {
+				width: 60%;
+			}
+
+			&:last-child {
+				width: 60%;
+				margin-left: auto;
+				margin-right: 0;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.mbl-menu__holder {
+		width: 0;
+		background-color: $color--white;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		position: fixed;
+		transition: all .3s ease; 
+		overflow: hidden;
+
+		&.show {
+			width: 100%;
+		}
+
+		.mbl--close {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			font-size: 1.5em;
+			z-index: 6;
+		}
+
+		.frm-bckgrnds.right--bg {
+		    background-position: right bottom;
+		    top: 0;
+		    right: 0;
+		    z-index: -1;
+		}
+	}
+
+	// footer 
+
+	.ftr--holder {
+		p, a {
+			font-size: .7em;
+		}
+		.w-50 {
+			.w-50 {
+				width: 95% !important;
+			}
+		}
+	}
+
+
+	// Booking
+
+	.frm-title {
+		font-size: 1.5em;
+	}
+
+	.m-step__holder {
+
+		.m-step__number {
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			background-color: $color--secondary;
+		}
+	}
+
+	.booking-holder__inner {
+
+		.w-75 {
+			width: 100% !important;
+		}
+
+		.card-type {
+			width: 100%;
+			margin: 30px 0px;
+			height: auto;
+
+			.w-60 {
+				width: 60% !important;
+			}
+		}
+
+		.w-25 {
+			width: 100% !important;
+
+			.w-85 {
+				width: 90% !important;
+
+				&.mr-0 {
+					margin-right: auto !important;
+				}
+			}
+		}
+	}
+
+	.product-card__holder {
+		padding: 0;
+
+		.card-footer {
+
+			.text-right {
+				text-align: left !important;
+			}
+		}
+
+	}
+
+	.card--duration {
+		
+		small {
+			width: 80%;
+    		overflow: hidden;
+    		text-overflow: ellipsis;
+    		white-space: nowrap;
+		}
+	}
+
+	.product--card .card-footer img {
+		width: 20px;
+		height: 20px;
+	}
+
+	.product--card .card--overlay .overlay--desc {
+		max-height: 60px;
+		height: auto;
+		font-size: .9em;
+		overflow-y: auto;
+	}
+
+	.paymnets-gateway__holder {
+
+		.payments-gateway {
+			margin-bottom: 20px;
+		}
+	}
+
+	.sched--holder {
+		width: 90%;
+		margin: auto;	
+	}
+
+	// Login Page
+
+	.lgn--holder {
+		height: auto;
+		&.w-30 {
+			width: 90% !important;
+		}
+	}
+
+	.login--holder {
+		height: auto;
+	}
+
+
+	// Homepage
+
+	.hdr-title {
+		font-size: 5em;
+	}
+
+	.hm-frm1__holder {
+
+		.hm-frm1__holder .hm-frm1__inner .w-50 {
+			height: auto;
+		}
+
+	}
+
+	.hm-frm1__holder .frm-bckgrnds.left--bg {
+		position: relative;
+		height: 280px;
+		width: 100%;
+		transform: none;
+		top: 35px;
+	}
+
+	.hm-frm1__holder .hm-frm1__content .hm-frm1__content-text {
+		font-size: 1em;
+	}
+
+	.hm-frm1__holder .hm-frm1__inner .w-50 {
+	    height: auto;
+	    width: 100% !important;
+	    padding: 70px 0px 130px;
+	}
+
+	.hm-frm1__holder .hm-frm1__content {
+		width: 100%;
+	}
+
+	
+	.hm-frm2__holder .hm-frm2__col {
+		margin-bottom: 30px;
+
+		&.w-25 {
+			width: 100% !important;
+		}
+	}
+
+	.hm-frm3__holder .frm-bckgrnds {
+		background-size: cover;
+	}
+
+	.hm-frm3__holder .hm-frm3__slider {
+		width: 90%;
+		margin: 0 15px 20px;
+		height: 40vh;
+
+		.w-60 {
+
+			.w-45 {
+				width: 100% !important;
+			}
+		}
+	}
+
+	.hm-frm3__holder .hm-frm3__slider .w-40 {
+		height: 40vh;
+	}
+
+	.hm-frm3__holder .hm-frm3__slider .w-60 {
+		height: 40vh;
+	}
+
+	.hm-frm3__holder .hm-frm3__sliderHolder .slick-list {
+		padding: 0 20px !important;
+	}
+
+	.arrows.arrow-left {
+	    left: 20px;
+	    top: auto;
+	    bottom: 75px;
+	}
+
+	.arrows.arrow-right {
+	    right: 20px;
+	    top: auto;
+	    bottom: 75px;
+	}
+
+	.hm-frm4__inner {
+
+		.w-50 {
+			width: 100% !important;
+		}
+
+		.w-70 {
+			width: 100% !important;
+		}
+	}
+
+
+
+	.hm-frm4__holder .map--holder #map {
+		width: 100%;
+	} 
+
+	.dashboard--holder {
+
+		.w-30 {
+			width: 100% !important;
+			margin-bottom: 50px;
+
+			.w-90 {
+				width: 100% !important;
+			}
+		}
+
+		.w-70 {
+			width: 100% !important; 
+		}
+	}
+
+	.dash--content {
+
+		.w-60 {
+			width: 100% !important;
+		}
+	}
+
+	.edit--profile {
+
+		.w-30 {
+			width: 60% !important; 
+		}
+	}
+
+	.sort--img {
+		width: 50px;
+		height: 50px;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.button-show {
+		font-size: 1.2em;
+		color: $color--orange;
+	}
+
+	.product--card_holder {
+		padding-left: 0;
+		padding-right: 10px;
+
+		&:nth-child(2n) {
+			padding-right: 0;
+		}
+	}
+
+	.product--card .card-img-top {
+		height: 200px;
+		object-fit: cover;
+	}
+
+	.card-footer-details {
+
+		.text-right {
+			text-align: left !important;
+		}
+	}
+
+	.booking--modal {
+		height: auto;
+
+		.modal-dialog {
+			top: 0 !important;
+			transform: none !important;
+		}
+	}
+
+	.booking--modal .modal-content {
+		width: 100%;
+		margin: 0;
+		border-radius: 0px;
+		overflow-x: hidden;
+    	overflow-y: auto;
+    	max-height: 100vh;
+	}
+
+	.booking--modal .modal-dialog {
+		margin: 0;
+	}
+
+	.appointment--modal .modal-content {
+		width: 100%;
+		padding: 30px 0px;
+	}
+
+	.close--booking {
+		text-align: right;
+	}
+
+	.terms--modal .modal-content {
+		width: 100%;
+	}
+
+	.baking--modal .modal-content {
+		width: 100%;
+	}
+
+	.appointment--modal {
+
+		button {
+			display: block;
+			margin-right: auto !important;
+			margin-left: auto !important;
+			margin-bottom: 20px;
+		}
+	}
+
+	.baking-buttons__holder {
+		position: relative;
+
+		&.text-right {
+			text-align: left !important;
+		}
+
+		.modal--amount {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	.voucher--modal .modal-content {
+		width: 100%;
+	}
+
+}

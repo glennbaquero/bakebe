@@ -1,0 +1,52 @@
+.dg-btn--ok {
+	color: #ffffff;
+    background-color: #0096D9;
+    border-color: #0096D9;
+}
+
+.dg-btn--cancel {
+    color: #0096D9;
+    background-color: #ffffff;
+    border-color: #0096D9;
+}
+
+.btn-primary {
+	color: #fff;
+    background-color: #e8627c;
+    border-color: #e8627c;
+}
+
+.btn-primary:hover{
+	color: #fff;
+    background-color: #e8627c;
+    border-color: #e8627c;
+}
+
+.bg-bakebe {
+    background-color: #e8627c !important;
+    color: #fff !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #e8627c;
+    border-color: #e8627c;
+}
+
+.login-page {
+	background-color: #e8627c;
+}
+
+.login-logo b {
+    color: white;
+}
+
+.sidebar-dark-danger .nav-sidebar > .nav-item > .nav-link.active, .sidebar-light-danger .nav-sidebar > .nav-item > .nav-link.active {
+    background-color: #e8627c;
+    color: #fff;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #e8627c;
+}

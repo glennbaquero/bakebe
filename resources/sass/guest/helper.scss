@@ -1,0 +1,43 @@
+/*
+* Vertical
+*/
+.vertical-parent {
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.vertical-align {
+	display: table-cell;
+	vertical-align: middle;
+
+	&.align-t {
+		vertical-align: top;
+	}
+
+	&.align-b {
+		vertical-align: bottom;
+	}
+}
+
+/*
+* Inline
+*/
+.inlineBlock-parent > * {
+	display: inline-block;
+	vertical-align: middle;
+
+	&.align-t {
+		vertical-align: top;
+	}
+
+	&.align-b {
+		vertical-align: bottom;
+	}
+}
+
+
+.img-contain {
+	object-fit: contain;
+}

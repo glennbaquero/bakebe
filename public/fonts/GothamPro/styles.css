@@ -1,0 +1,17 @@
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url('GothamPro.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src:  url('GothamPro.otf')  format('opentype'),
+	    url('GothamPro.ttf')  format('truetype'), url('GothamPro.svg#GothamPro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+

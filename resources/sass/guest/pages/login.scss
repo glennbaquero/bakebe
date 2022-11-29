@@ -1,0 +1,42 @@
+.login--holder {
+	height: 100vh;
+	
+	.form-group {
+
+		label {
+			font-size: .8em;
+			color: $color--light-gray;	
+		}
+	}
+
+	.forgot--link {
+		font-size: .8em;
+	}
+
+	.signup--link {
+		text-decoration: underline;
+	}
+
+	.frm-bckgrnds {
+		width: 30%;
+		position: absolute;
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		&.left--bg {
+			background-position: left;
+			top: 60px;
+			left: 0;
+			height: 70vh;
+		}
+
+		&.right--bg {
+			background-position: right;
+			top: 140px;
+			right: 0;
+			height: 50vh;
+		}
+	}
+
+
+}

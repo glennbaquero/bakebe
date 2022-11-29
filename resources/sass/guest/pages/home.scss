@@ -1,0 +1,211 @@
+// Homepage Styling
+
+.hm-frm1__holder {
+	position: relative;
+
+	.hm-frm1__inner {
+		position: relative;
+		z-index: 9;
+		
+		.w-50 {
+			height: 100vh;
+		}
+	}
+
+	.hm-frm1__content {
+		width: 100%;
+
+		.hm-frm1__content-text {
+			width: 70%;
+		}
+	}
+
+	.frm-bckgrnds {
+		z-index: 1;
+
+		&.left--bg {
+			top: 50%;
+			height: 80%;
+			transform: translateY(-50%);
+		}
+
+		&.right--bg {
+			height: 40%;
+			top: auto;
+			bottom: -50px;
+		}
+	}
+
+	svg {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+
+.hm-frm2__holder {
+	position: relative;
+
+	.hm-frm2__inner	{
+		position: relative;
+	}
+
+	.hm-frm2__col {
+		position: relative;
+		text-align: center;
+
+		.hm-frm2__col--img {
+			width: 30%;
+			height: 80px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		p {
+			 display: -webkit-box;
+  			-webkit-line-clamp: 2;
+  			-webkit-box-orient: vertical;  
+  			overflow: hidden;
+		}
+
+		.hm-frm2__arrows {
+			width: 40px;
+			height: 40px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+		}
+	}
+
+	.frm-bckgrnds {
+
+		&.left--bg {
+			height: 30%;
+			top: auto;
+			bottom: -30px;
+		}
+	}
+}
+
+.hm-frm3__holder {
+	position: relative;
+
+	.frm-bckgrnds {
+		background-size: 100% 100%;
+	}
+
+	.hm-frm3__sliderHolder {
+		width: 100%;
+		position: relative;
+
+		.slick-list {
+			padding: 0 350px !important;
+		}
+
+		.slick-track {
+			padding: 150px 0px 
+		}
+
+		.slick-center {
+			opacity: 1;
+			transform: translateY(-10%);
+		}
+
+		.slick-prev {
+		    left: 200px;
+		}
+
+		.slick-next {
+			right: 200px;
+		}
+	}
+
+	.hm-frm3__slider {
+		width: 32%;
+		height: 40vh;
+		position: relative;
+		margin-right: 2%;
+		margin-bottom: 2%;
+		transition: all .3s ease;
+		background-color: $color--white;
+		border-radius: 60px; 
+		opacity: .5;
+		overflow: hidden;
+		
+		.w-40 {	
+			position: relative;
+			height: 40vh;
+		}
+
+		.w-60 {
+			position: relative;
+			height: 40vh;
+
+			.w-90 {
+				height: 60px;
+				overflow-y: auto;
+			}
+
+			.w-80 {
+				// height: 20vh;
+				// .btn {
+				// 	position: absolute;
+				// 	bottom: 20px;
+				// 	right: 70px;
+				// }
+			}
+		}
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+.hm-frm4__holder {
+	position: relative;
+
+	.hm-frm4__inner {
+		position: relative;
+
+		.w-50 {
+			height: 50vh;
+		}
+	}
+
+	.map--holder {
+		width: 100%;
+		height: 50vh;
+		overflow: hidden;
+
+		#map {
+			width: 70%;
+			height: 100%;
+			border-radius: 20px;
+		}
+	}
+
+	.frm-bckgrnds {
+		width: 30%;
+
+		&.left--bg {
+			height: 60vh;
+		}
+
+		&.right--bg {
+			height: 50vh;
+			top: auto;
+			bottom: 90px;
+		}
+	}
+}
