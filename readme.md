@@ -1,4 +1,4 @@
-# Laravel Boilerplate
+# BakeBe Setup
 
 ### Installation Guide
 Copy .env.example for values basis
